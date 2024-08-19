@@ -1,7 +1,7 @@
 
 .main-header {
     background-color: white;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid #ef233c;
 }
 
 .main-bar {
@@ -61,9 +61,8 @@
     margin-left: 10px;
 }
 
-/* Menu bar */
 .menu-bar {
-    background-color: red;
+    background-color:  #ef233c;
     padding: 10px 20px;
     display: flex;
     justify-content: center;
@@ -79,6 +78,32 @@
 .menu-bar a:hover {
     text-decoration: underline;
 }
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    flex-grow: 1;
+    border-radius: 30%;
+}
+
+.item img {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+}
+
+.add-to-cart {
+    background-color:  #ef233c;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 450px; 
+    cursor: pointer;
+}
+
+
 
 body {
     display: grid;
@@ -107,6 +132,7 @@ aside {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px; 
+    border-radius: 5%;
 }
 
 aside img {
@@ -117,32 +143,73 @@ aside img {
 
 #section1 {
     grid-area: section1;
-    background-color: #ddd;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; 
+    gap: 20px;
+    background-color: #edf2f4;
+    border-radius: 5%;
 }
+
+
+
 
 #section2 {
     grid-area: section2;
-    background-color: #ccc;
+    background-color: #edf2f4;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; 
+    gap: 20px;
+    border-radius: 5%;
 }
 
 #section3 {
     grid-area: section3;
-    background-color: #bbb;
+    background-color: #edf2f4;
     padding: 10px;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: stretch; 
+    gap: 20px;
+    border-radius: 5%;
+}
+
+#section3 img {
+    width: 30%;
+    height: 25%;
 }
 
 #section4 {
     grid-area: section4;
     background-color: #aaa;
     padding: 10px;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px; 
+    min-width: 260px;
+    flex-wrap: wrap; 
 }
+#section4 img {
+    width: 30%;
+    height: 20%;
+}
+
 
 #section5 {
     grid-area: section5;
     background-color: #999;
     padding: 10px;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px; 
+    min-width: 280px;
 }
 
 footer {
