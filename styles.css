@@ -178,13 +178,13 @@ aside img {
 }
 
 #section3 img {
-    width: 30%;
-    height: 25%;
+    width: 32%;
+    height: 30%;
 }
 
 #section4 {
     grid-area: section4;
-    background-color: #aaa;
+    background-color: #edf2f4;
     padding: 10px;
     border-radius: 5%;
     display: flex;
@@ -195,21 +195,33 @@ aside img {
     flex-wrap: wrap; 
 }
 #section4 img {
-    width: 30%;
-    height: 20%;
+    min-height: 100px; 
+    min-width: 150px;
 }
 
-
-#section5 {
-    grid-area: section5;
-    background-color: #999;
+#mercado-pago{
     padding: 10px;
     border-radius: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 200px; 
-    min-width: 280px;
+    min-width: 260px;
+    flex-wrap: wrap; 
+}
+
+
+#section5 {
+    grid-area: section5;
+    background-color: #edf2f4;
+    padding: 10px;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px; 
+    min-width: 260px;
+    flex-wrap: wrap; 
 }
 
 footer {
