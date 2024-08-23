@@ -8,29 +8,31 @@
 </head>
 <body>
     <header>
+        <a href="home.html" class="back-arrow" aria-label="Volver a la página principal"></a>
         <h1>Formulario de contacto</h1>
     </header>
     <main>
-        <div class="product-info">
-            <img src="" alt="falta imagen del producto">
-            <p>(falta descripción del prodcuto)</p>
+        <div class="form-container">
+            <div class="product-info">
+                <img src="assets/b456ca3b-2f0d-4f15-b3ee-bf5dd7bdf831.jfif" alt="Descripción del producto">
+                <p>Estamos en la capacidad de armar la máquina para lo que necesites, ni más ni menos, los límites los pones TÚ. Ponte en contacto con nosotros y cumple el sueño de tener la máquina que siempre has querido.</p>
+            </div>
+            <form action="#">
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="requerimientos">Explícanos tu requerimiento:</label>
+                <textarea id="requerimientos" name="requerimientos" maxlength="255" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
         </div>
-        <form action="#">
-            <label for="nombre">Nombre y Apellido:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="email">Correo:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" required>
-
-            <label for="requerimientos">Explícanos tu requerimiento:</label>
-            <textarea id="requerimientos" name="requerimientos" maxlength="255" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
-        <a href="home.html">Volver a la página principal</a>
     </main>
 </body>
 </html>

@@ -180,6 +180,14 @@ aside img {
     object-fit: cover;
 }
 
+#section2 .add-to-cart{     
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 70%;
+} 
+
+
 #section3 {
     grid-area: section3;
     background-color: #edf2f4;
@@ -291,31 +299,7 @@ footer {
     z-index: 2;
 } 
 
-#section2 .add-to-cart{     
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    width: 70%;
-} 
 
-#section2 .item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px;
-    border-radius: 30%;
-}
-
-#section2 .item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-
-}
-
-footer #left {
-    align-items: left;
-}
 
 .item:hover img {
     transform: scale(1.1); 

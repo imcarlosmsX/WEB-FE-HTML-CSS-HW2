@@ -1,0 +1,131 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Fondo gris claro */
+}
+
+/* Encabezado del formulario */
+header {
+    position: relative; /* Para posicionar la flecha de forma absoluta */
+    background-color: #ef233c; /* Rojo oscuro */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.back-arrow {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    background-color: #ef233c;
+    text-align: center;
+    line-height: 24px;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.back-arrow::before {
+    content: '\2190'; /* Código Unicode para la flecha hacia la izquierda */
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.back-arrow:hover {
+    background-color: #d82d3a;
+    border-color: #d82d3a;
+}
+
+/* Estilos del contenedor del formulario */
+.form-container {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos al principio */
+    gap: 20px; /* Espacio entre la imagen y el formulario */
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de la imagen y la descripción */
+.product-info {
+    flex: 1;
+    max-width: 300px; /* Ancho máximo para la imagen */
+    text-align: center;
+}
+
+.product-info img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-info p {
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Estilos del formulario */
+form {
+    flex: 2; /* Ocupa más espacio que la imagen y la descripción */
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #ef233c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #d82d3a;
+}
+
+a {
+    color: #ef233c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
