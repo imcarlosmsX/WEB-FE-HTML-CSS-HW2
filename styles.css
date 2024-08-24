@@ -270,6 +270,13 @@ aside img {
 footer {
     grid-area: footer;
     text-align: center;
+    background-color: #ef233c;
+}
+
+footer p {
+    color: #edf2f4;
+    padding: 10px;
+    margin: 0;
 }
 
 .item {
@@ -323,4 +330,16 @@ footer {
 
 section:target {
     border: 2px solid #ef233c;
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    body {
+        grid-template-columns: 1fr 1fr;
+    }
+    aside {
+      display: none; /* Hide the sidebar on small screens */
+    }
+    /* Other mobile-specific styles */
 }
